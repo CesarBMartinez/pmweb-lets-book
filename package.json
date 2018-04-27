@@ -1,0 +1,26 @@
+{
+  "name": "pmweb-lets-book",
+  "version": "1.0.0",
+  "description": "Pmweb Let's Book test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarBMartinez/pmweb-lets-book.git"
+  },
+  "author": "cesar_martinez22@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarBMartinez/pmweb-lets-book/issues"
+  },
+  "homepage": "https://github.com/CesarBMartinez/pmweb-lets-book#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

@@ -1,3 +1,18 @@
+function addCss() {
+	if (typeof style !== 'undefined') {
+		$('body').append(style);
+	}
+}
+
+function addModalHtml() {
+	if (typeof modalHtml !== 'undefined') {
+		$('body').append(modalHtml);
+	}
+}
+
+addCss();
+addModalHtml();
+
 //Mudando logo do header
 $('#navContent a img').attr("src","https://i.imgur.com/KYSi55p.png");
 
