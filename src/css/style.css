@@ -13,6 +13,9 @@
 .mcolor-cliente-principal-bg {
 	background-color: #302c29;
 }
+#busca-flutuante:hover {
+	background-color: #493f38;
+}
 .mcolor-label-text2 {
 	color: #f5534b;
 }
@@ -20,7 +23,7 @@
 	background-color: #493f38 !important;
 }
 .mcolor-busca-bright:hover {
-	background-color: #211f1d;
+	background-color: #211f1d !important;
 }
 .busca-field-label {
 	color: #f5534b;
@@ -43,6 +46,13 @@
 }
 #var-partida-pariodo-label {
   margin-right: 4px;
+}
+#busca-calendario {
+	width: auto;
+}
+#calendario-1 {
+	width: 100%;
+	margin-left: 0;
 }
 .mcolor-action-btn {
   background-color: #f5534b;
