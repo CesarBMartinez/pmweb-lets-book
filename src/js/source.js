@@ -27,15 +27,15 @@ function logo() {
 /* substitui a palavra 'diária(s)' por 'noite(s)' */
 function calculaNoites() {
 	var labelNoitesNew = "#var-periodo-label-noites-2";
-  var noitesTxt = $("#var-periodo-label-noites").text();
-  noitesTxt = (noitesTxt.charAt(noitesTxt.length-1) === "s") ? noitesTxt.replace("diárias", "noites") : noitesTxt.replace("diária", "noite");
-  
-  if (noitesTxt) {
- 	  $(labelNoitesNew).text("("+ noitesTxt + ")");
- 	  $(labelNoitesNew).css("display","inline");
-  } else {
-  	$(labelNoitesNew).hide();
-  }
+	var noitesTxt = $("#var-periodo-label-noites").text();
+	noitesTxt = (noitesTxt.charAt(noitesTxt.length-1) === "s") ? noitesTxt.replace("diárias", "noites") : noitesTxt.replace("diária", "noite");
+	
+	if (noitesTxt) {
+		$(labelNoitesNew).text("("+ noitesTxt + ")");
+		$(labelNoitesNew).css("display","inline");
+	} else {
+		$(labelNoitesNew).hide();
+	}
 }
 
 /* Junta os fields de partida e chegada */
@@ -53,7 +53,7 @@ function fieldPeriodo() {
 	calculaNoites();
 	// chama a função calculaNoites sempre que o elemento #var-periodo-label-noites mudar
 	$(labelNoites).bind('DOMNodeInserted DOMNodeRemoved',function(){
-	  calculaNoites();
+		calculaNoites();
 	});
 
 	//Remove campo de saida
@@ -65,13 +65,13 @@ function fieldPeriodo() {
 
 function alteraCalendario() {
 	//sobrescreve a função loadCalendarUm
-  loadCalendarUm = function(date) {
+	loadCalendarUm = function(date) {
     //Desabilita a flecha da esquerda caso o mes desta data seja o mês atual
     if (date.getMonth() == new Date().getMonth() && date.getFullYear() == new Date().getFullYear()) {
-      $(".arrow-left").css("pointer-events", "none").css("opacity", "0.2");
+    	$(".arrow-left").css("pointer-events", "none").css("opacity", "0.2");
     }
     else {
-      $(".arrow-left").css("pointer-events", "").css("opacity", "1");
+    	$(".arrow-left").css("pointer-events", "").css("opacity", "1");
     }
 
     var dataMes = date.getMonth() + 1;
