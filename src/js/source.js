@@ -29,7 +29,7 @@ function calculaNoites() {
 	var labelNoitesNew = "#var-periodo-label-noites-2";
 	var noitesTxt = $("#var-periodo-label-noites").text();
 	noitesTxt = (noitesTxt.charAt(noitesTxt.length-1) === "s") ? noitesTxt.replace("diárias", "noites") : noitesTxt.replace("diária", "noite");
-	
+
 	if (noitesTxt) {
 		$(labelNoitesNew).text("("+ noitesTxt + ")");
 		$(labelNoitesNew).css("display","inline");
