@@ -11,7 +11,7 @@ gulp.task('css', ()=> {
 
 gulp.task('html', ()=> {
 	gulp.src('src/html/*.html')
-		.pipe(htmlmin())
+		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('build/html/'));
 });
 
