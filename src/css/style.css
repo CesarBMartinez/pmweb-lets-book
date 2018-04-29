@@ -100,9 +100,11 @@ a.caminho-pagina-passado {
   width: 45px;
 }
 #busca-calendario .celulaData:hover,
-#busca-calendario .calendario-tooltip,
-#busca-calendario .calendario-tooltip:after {
+#busca-calendario .calendario-tooltip {
 	background-color: #493f38;
+}
+#busca-calendario .calendario-tooltip:after {
+  border-bottom-color: #493f38;
 }
 #busca-calendario .inBetweenDate {
   background-color: #493f38;
