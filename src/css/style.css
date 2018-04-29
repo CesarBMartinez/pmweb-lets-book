@@ -319,7 +319,7 @@ a.caminho-pagina-passado {
 .hotel-indisponivel-texto-sub-titulo {
 	color: #888;
 }
-.itemVarValorFinal,
+.itemHotelContent .blocoReserve .itemVarValorFinal,
 .hotel-indisponivel-texto-titulo {
 	color: #444;
 }
